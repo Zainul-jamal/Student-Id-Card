@@ -1,5 +1,4 @@
 function data(){
-    var file  = document.getElementById('file') 
     let names = document.getElementById('name').value
     let father = document.getElementById('father').value
     let clas = document.getElementById('class').value
@@ -12,9 +11,20 @@ function data(){
     
     window.location.href="index.html"
     
-        console.log(file.files[0]);
-
+    
 }
+var file  = document.getElementById('file') 
+file.addEventListener('change',()=>{
+    const fr = new FileReader();
+    fr.readAsDataURL(file.files[0]);
+    
+    fr.addEventListener('load',()=>{
+    const url = fr.result;
+    const image = new Image();
+    image.src= url;
+    localStorage.setItem('myImage',url);
+
+})})
 
 
 // function  aa(){

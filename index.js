@@ -3,6 +3,8 @@ var sname =document.getElementById('namess')
 var father =document.getElementById('fathers')
 var clas =document.getElementById('E-mar')
 var roll =document.getElementById('margin')
+var image =document.getElementById('image')
+const url = localStorage.getItem('myImage');
 
 
 var dataName = localStorage.getItem('stdNames')
@@ -14,17 +16,22 @@ sname.innerText = dataName
 father.innerText= dataFather
 clas.innerText = dataClass
 roll.innerText = dataRol
+var img = new Image();
+image.src=url;
+
 
 function remove(){
     localStorage.removeItem('stdNames')
     localStorage.removeItem('father')
     localStorage.removeItem('class')
     localStorage.removeItem('roll')
+    localStorage.removeItem('myImage')
 
     sname.innerText =''
     father.innerText= ''
     clas.innerText = ''
     roll.innerText = ''
+    image.src=image
    
 }
 
@@ -36,6 +43,8 @@ function printDoc(){
     document.getElementById('body').innerHTML = body
 
 }
+
+// image.src=img;
 
 
 
