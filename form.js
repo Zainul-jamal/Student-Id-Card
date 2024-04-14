@@ -1,4 +1,5 @@
 function data(){
+    var file  = document.getElementById('file') 
     let names = document.getElementById('name').value
     let father = document.getElementById('father').value
     let clas = document.getElementById('class').value
@@ -11,10 +12,18 @@ function data(){
     
     window.location.href="index.html"
     
-    
-}
-// var zain = document.getElementById('zain')
-// var dataName = localStorage.getItem('class')
-// zain.innerText = dataName
+        console.log(file.files[0]);
 
-// console.log(dataName);
+}
+
+
+// function  aa(){
+
+//     var image = document.getElementById('img')
+
+//     localStorage.setItem('image',image)
+//     var dataImg= localStorage.getItem('image')
+//     dataImg.src=URL.createObjectURL(file.files[0])
+    
+
+// }

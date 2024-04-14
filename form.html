@@ -17,14 +17,14 @@
         .mar{
             margin-top: 30px;
         }
-        #img{
+        /* #img{
             width: 200px;
             height: 200px;
             margin-left: 20px;
             margin-top: 10px;
             border: 1px solid blue;
 
-        }
+        } */
     </style>
   </head>
   <body>
@@ -32,29 +32,31 @@
  
     <div class="position-relative mar">
         <div class="card  col-sm-12 position-absolute rounded-top  start-50 translate-middle-x" style="width: 15rem;">
-<input type="file" name="" id="img">            <div class="card-body">
+
+          <div class="card-body">
                 <label for="name">Enter Name</label>
                 <input type="text" name=""  id="name">
 
      
                 <label for="father">Enter F Name</label>
                 <input type="text" name="" id="father">
-
+                  
                  <label for="class">Enter Class</label>
                 <input type="text" name="" id="class">
 
 
                 <label for="roll">Enter Roll #</label>
                 <input type="text" name="" id="roll">
+                
+                <div style="margin-top: 20px;">
+                  <label for="file">Choose image:</label>
+                <input type="file" type="image" id="file">            
+</div>
         <br><br>
-        <button class="btn btn-primary" onclick="data()">submit</button>
-        <!-- <a href="index.html" onclick="data()" class="btn btn-primary">submit</a> -->
+      <a href="index.html" onclick="data()" class="btn btn-outline-primary">submit</a>
       </div>
           </div>
           </div>
-
-
-
 
  <script src="form.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->

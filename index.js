@@ -23,10 +23,21 @@ function remove(){
 
     sname.innerText =''
     father.innerText= ''
-clas.innerText = ''
-roll.innerText = ''
+    clas.innerText = ''
+    roll.innerText = ''
    
 }
+
+function printDoc(){
+    var body = document.getElementById('body').innerHTML;
+    var data = document.getElementById('data').innerHTML;
+    document.getElementById('body').innerHTML = data
+    window.print();
+    document.getElementById('body').innerHTML = body
+
+}
+
+
 
 // console.log(localname);
 // console.log(localfather);
