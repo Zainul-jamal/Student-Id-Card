@@ -16,8 +16,10 @@ sname.innerText = dataName
 father.innerText= dataFather
 clas.innerText = dataClass
 roll.innerText = dataRol
-var img = new Image();
-image.src=url;
+// var img = new Image();
+    if (roll.innerText == dataRol) {
+      image.src = url;
+    }
 
 
 function remove(){
@@ -31,7 +33,8 @@ function remove(){
     father.innerText= ''
     clas.innerText = ''
     roll.innerText = ''
-    image.src=image
+    image.src="./img/letter-z_12731262.png" 
+    
    
 }
 
